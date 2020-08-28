@@ -19,11 +19,11 @@
 .layui-layer-btn a:hover{border-color: #00a1d6 !important;background-color:#00a1d6 !important;color: #fff !important;}
 
 </style>
-<script src="./yzmplayer.js.下载"></script>
-<script src="./md5.min.js.下载"></script>
-<script src="./jquery.min.js.下载"></script>
-<script src="./hls.min.js.下载"></script>
-<script src="./layer.js.下载"></script><link rel="stylesheet" href="./layer.css" id="layuicss-layer">
+<script src="./yzmplayer.js"></script>
+<script src="./md5.min.js"></script>
+<script src="./jquery.min.js"></script>
+<script src="./hls.min.js"></script>
+<script src="./layer.js"></script><link rel="stylesheet" href="./layer.css" id="layuicss-layer">
 
 <script>
 var css ='<style type="text/css">';
@@ -295,9 +295,10 @@ css+='</style>';
 <div class="yzmplayer-notice" style="opacity: 0;">视频已准备就绪，即将为您播放</div><div class="yzmplayer-danmu"><div class="yzmplayer-watching"><span class="yzmplayer-watching-number" title="播放器在线人数">1</span>人正在观看,<span class="danmuku-num">100</span>条弹幕</div><ul class="yzmplayer-list"><li>时间</li><li>弹幕内容</li><li>发送时间</li></ul><ul class="list-show"></ul></div><div class="svg-icon"><svg aria-hidden="true"><symbol id="icon-play" width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><filter x="-11.2%" y="-10.8%" width="122.4%" height="125.5%" filterUnits="objectBoundingBox" id="pid-1-svgo-a"><feoffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feoffset><fegaussianblur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></fegaussianblur><fecomposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></fecomposite><fecolormatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.3 0" in="shadowBlurOuter1"></fecolormatrix></filter><path d="M52.352 13.5c4.837 0 8.707 4.32 8.647 9.72v21.06C61 49.62 57.128 54 52.29 54h-2.479c0 1.681-1.452 3-3.206 3S43.4 55.62 43.4 54H20.841c0 1.681-1.452 3-3.204 3-1.756 0-3.206-1.38-3.206-3h-2.722C6.87 54 3 49.68 3 44.28V23.22c0-5.4 3.87-9.72 8.709-9.72h11.25l-4.78-4.44c-.725-.661-.725-1.8 0-2.52.424-.36.908-.54 1.391-.54.546 0 1.029.18 1.392.54l7.5 6.96h7.318l7.5-6.96c.422-.36.907-.54 1.39-.54.544 0 1.029.18 1.392.54.725.659.725 1.8 0 2.52l-4.78 4.44h11.07zM26.527 45.54l17.418-10.08c1.45-.901 1.45-2.221 0-3.122L26.527 22.2c-1.452-.84-2.662-.12-2.662 1.56v20.22c0 1.74 1.21 2.4 2.662 1.561z" id="pid-1-svgo-b"></path></defs><g fill="none" fill-rule="evenodd"><use fill="#000" filter="url(#pid-1-svgo-a)" xlink:href="#pid-1-svgo-b"></use><use fill-opacity=".7" fill="#FFF" xlink:href="#pid-1-svgo-b"></use><path d="M26.527 45.541c-1.452.84-2.662.18-2.662-1.56V23.76c0-1.68 1.21-2.4 2.662-1.56L43.945 32.34c1.45.9 1.45 2.22 0 3.121L26.527 45.541z" fill="#000" opacity=".06"></path></g></symbol><symbol id="icon-play-xj" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22 22"><path d="M16 5a1 1 0 00-1 1v4.615a1.431 1.431 0 00-.615-.829L7.21 5.23A1.439 1.439 0 005 6.445v9.11a1.44 1.44 0 002.21 1.215l7.175-4.555a1.436 1.436 0 00.616-.828V16a1 1 0 002 0V6C17 5.448 16.552 5 16 5z"></path></symbol></svg></div></div>
 <div class="tj"><script type="text/javascript" src="./z_stat.php"></script><script src="./core.php" charset="utf-8" type="text/javascript"></script><a href="https://www.cnzz.com/stat/website.php?web_id=1278659065" target="_blank" title="站长统计">站长统计</a></div>
 <script>
+	var	tempUrl=window.location.href.split("?url=")[1];
     // 播放器基本设置
     var playlink ="",urlpar ='';
-    var dmapi = 'https://jx.hh66.xyz/bofangqi/v3/',vodurl = 'https://fragrant-queen-9d04.ruleihui.workers.dev/0:/2019整理/2019 10~12/ あやめ陽菜/DASD-604 乳首を弄れば、胸が大きくなるって言ったのに。 あやめ陽菜/DASD-604 乳首を弄れば、胸が大きくなるって言ったのに。 あやめ陽菜.mp4',vodid="",vodsid="",vodpic="",vodname="",next = "",ym="http://www.ydllk.top";
+    var dmapi = 'https://jx.hh66.xyz/bofangqi/v3/',vodurl = tempUrl,vodid="",vodsid="",vodpic="",vodname="",next = "",ym="http://www.ydllk.top";
     var pic="<https://jx.hh66.xyz/bofangqi/img/H222eb1400c714319a40e62c742cc834bv.jpg";
     var playnext = next ;
     var user = '',group = "",color = '#00a1d6',logo ='',autoplay = false;
@@ -319,7 +320,7 @@ css+='</style>';
     //播放结束
     function video_end() {alert("播放结束啦=。=")};
 </script>
-<script src="./setting.js.下载"></script>
+<script src="./setting.js"></script>
 <script>
 </script>
 
