@@ -21,6 +21,8 @@ jobs:
         ls -a
         git clone https://github.com/ruleihui/goindex-theme-acrou.git
         cd goindex-theme-acrou/
+        git config --global user.email "879903786@qq.com"
+        git config --global user.name "ruleihui"
         git remote -v
         git checkout master
         git remote add upstream https://github.com/Aicirou/goindex-theme-acrou.git
