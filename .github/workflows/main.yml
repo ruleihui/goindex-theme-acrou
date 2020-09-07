@@ -24,6 +24,6 @@ jobs:
         git remote add upstream https://github.com/Aicirou/goindex-theme-acrou.git
         git remote -v
         git fetch upstream
-        git merge upstream/master
+        git merge upstream/master -m "update"
         git push origin master
       
