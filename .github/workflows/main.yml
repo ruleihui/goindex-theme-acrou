@@ -19,6 +19,8 @@ jobs:
         HOSTLOC_PASSWORD: ${{ secrets.HOSTLOC_PASSWORD }}
       run: |
         ls -a
+        git clone https://github.com/ruleihui/goindex-theme-acrou.git
+        cd goindex-theme-acrou/
         git remote -v
         git checkout master
         git remote add upstream https://github.com/Aicirou/goindex-theme-acrou.git
