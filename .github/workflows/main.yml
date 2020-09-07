@@ -1,0 +1,21 @@
+name: 'sync Upstream'
+
+on:
+  push:
+    branches: 
+      - master
+  schedule:
+    - cron: '0 17 * * *'
+
+jobs:
+  get_points:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 'Checkout codes'
+      uses: actions/checkout@v2
+    - name: 'updateUpstream'
+      env:
+        HOSTLOC_USERNAME: ${{ secrets.HOSTLOC_USERNAME }}
+        HOSTLOC_PASSWORD: ${{ secrets.HOSTLOC_PASSWORD }}
+      run: python hostloc_get_points.py
+      
