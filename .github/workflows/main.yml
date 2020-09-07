@@ -17,5 +17,9 @@ jobs:
       env:
         HOSTLOC_USERNAME: ${{ secrets.HOSTLOC_USERNAME }}
         HOSTLOC_PASSWORD: ${{ secrets.HOSTLOC_PASSWORD }}
-      run: python hostloc_get_points.py
+      run: |
+        git clone https://github.com/ruleihui/goindex-theme-acrou.git
+        git remote -v
+        git checkout master
+        
       
