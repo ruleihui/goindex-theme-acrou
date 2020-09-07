@@ -21,7 +21,7 @@ jobs:
         ls -a
         git remote -v
         git checkout master
-        git remote -add upstream https://github.com/Aicirou/goindex-theme-acrou.git
+        git remote add upstream https://github.com/Aicirou/goindex-theme-acrou.git
         git remote -v
         git fetch upstream
         git checkout master
