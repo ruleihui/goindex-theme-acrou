@@ -21,7 +21,7 @@ jobs:
         git clone https://github.com/ruleihui/goindex-theme-acrou.git
         cd goindex-theme-acrou/
         git config --global user.email "879903786@qq.com"
-        git config --global user.name "ruleihui"
+        git config --global user.username "ruleihui"
         git config --global user.password $API_TOKEN_GITHUB
         git remote -v
         git checkout master
