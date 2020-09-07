@@ -16,13 +16,14 @@ jobs:
     - name: 'updateUpstream'
       env:
         API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        EMAIL:  ${{secrets.EMAIL}}
+        NAME: ${{secrets.NAME}} 
       run: |
         ls -a
-        git clone https://github.com/ruleihui/goindex-theme-acrou.git
+        git clone "https://$API_TOKEN_GITHUB@github.com/$NAME/goindex-theme-acrou.git" "goindex-theme-acrou"
         cd goindex-theme-acrou/
-        git config --global user.email "879903786@qq.com"
-        git config --global user.username "ruleihui"
-        git config --global user.password $API_TOKEN_GITHUB
+        git config --global user.email "$EMAIL"
+        git config --global user.name "$NAME"
         git remote -v
         git checkout master
         git remote add upstream https://github.com/Aicirou/goindex-theme-acrou.git
